@@ -1,0 +1,156 @@
+
+.register-ai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #044a6b, #0a3c5d);
+}
+
+.intro-new h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.intro-new p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #E0E0E0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.register-cards-ai {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 70px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px; 
+    justify-content: center; 
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.register-newaicard {
+    background-color: #F7F9FC;
+    color: #0D3B66;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.register-newaicard:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.register-newaicard h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #0056b3;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.register-newaicard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.register-newaicard ul li {
+    font-size: 1em;
+    margin: 8px 0;
+    color: #3C4858;
+}
+
+.register-newaicard p {
+    font-size: 1.6em;
+    color: #FF5A5F;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.register-newaicard button {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-newaicard button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .register-cards-ai {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 60px; 
+        padding: 0 30px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .register-cards-ai {
+        grid-template-columns: 1fr;
+        gap: 40px; 
+        padding: 0 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .register-cards-ai {
+        grid-template-columns: 1fr; 
+        gap: 30px; 
+        padding: 0 10px; 
+    }
+}
