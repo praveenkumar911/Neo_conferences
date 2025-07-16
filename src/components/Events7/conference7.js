@@ -135,16 +135,15 @@ const OverlayPage = () => {
   ? day4Schedule 
   : null;
 
-  // const handleBrochureDownload = () => {
-  //   // Create a temporary link element
-  //   const link = document.createElement('a');
-  //   link.href =newfile;
-  //   link.download = '3rd-International-Congress-Womens-Health-Brochure.pdf';
-    
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+// const handleBrochureDownload = () => {
+//   const link = document.createElement('a');
+//   link.href = require('../assets/6th-International-Congress-Womens-Health-Brochure.pdf'); // Adjust the path as needed
+//   link.download = '6th-International-Congress-Womens-Health-Brochure.pdf';
+  
+//   document.body.appendChild(link);
+//   link.click();
+//   document.body.removeChild(link);
+// };
 
 
   return (
@@ -157,7 +156,7 @@ const OverlayPage = () => {
             <div><i class="fa-solid fa-map-marker-alt exicon"></i> NewYork, USA</div>
           </div>
           <div class="nmiutton-group">
-            <button class="nmivent-button">Brochure</button>
+            <button className="nmivent-button" >Brochure</button>
             <button class="nmivent-button">Abstract</button>
           </div>
         </div>

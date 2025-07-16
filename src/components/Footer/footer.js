@@ -56,10 +56,10 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Events</h3>
             <ul>
-              <li className="arrow">3rd International Congress on Women's Health and Midwifery Excellence</li>
-              <li className="arrow">3rd Global Congress on Women’s Leadership, Empowerment, and Sustainable Development</li>
-              <li className="arrow">3rd International Congress of Women Changemakers and Visionary Leaders</li>
-              <li className="arrow">3rd World Congress on Mindfulness, Psychology, and Spirituality</li>
+              <li className="arrow">4th International Congress on Women's Health and Midwifery Excellence</li>
+              <li className="arrow">4th Global Congress on Women’s Leadership, Empowerment, and Sustainable Development</li>
+              <li className="arrow">4th International Congress of Women Changemakers and Visionary Leaders</li>
+              <li className="arrow">4th World Congress on Mindfulness, Psychology, and Spirituality</li>
             </ul>
           </div>
         </div>

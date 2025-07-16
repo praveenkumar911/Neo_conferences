@@ -6,7 +6,7 @@ import ChatbotIcon from "../../chatbot/chatbot";
 import Footer from "../../Footer/footer";
 import Register from "../../Register/register";
 // import StripePay from "../payment/Stripe";
-// import file from "../../images/Neo Brochure.pdf"
+import file from "./Neo Brochure.pdf"
 
 const Events = () => {
   const navigate=useNavigate()
@@ -137,16 +137,25 @@ const Events = () => {
   ? day4Schedule 
   : null;
 
-  // const handleBrochureDownload = () => {
-  //   // Create a temporary link element
-  //   const link = document.createElement('a');
-  //   link.href =file;
-  //   link.download = '5th-International-Congress-Womens-Leadership-Brochure.pdf';
+  const handleBrochureDownload = () => {
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href =file;
+    link.download = '6th-International-Congress-Womens-Leadership-Brochure.pdf';
     
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+    const handleAbstractDownload = () => {
+    const link = document.createElement('a');
+    link.href = require('../newconference1/NEO Conferences Abstract.pdf'); // Adjust path as needed
+    link.download = 'NEO Conferences Abstract.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
 
   return (
@@ -159,8 +168,8 @@ const Events = () => {
             <div><i class="fa-solid fa-map-marker-alt exicon"></i> Paris, France</div>
           </div>
           <div class="utton-group">
-            <button class="vent-button">Brochure</button>
-            <button class="vent-button">Abstract</button>
+            <button class="vent-button" onClick={handleBrochureDownload} >Brochure</button>
+            <button class="vent-button" onClick={handleAbstractDownload} >Abstract</button>
           </div>
         </div>
         <div class="ountdown-container">

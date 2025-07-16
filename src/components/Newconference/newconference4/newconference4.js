@@ -149,7 +149,14 @@ const Events = () => {
     document.body.removeChild(link);
   };
  
-  
+    const handleAbstractDownload = () => {
+    const link = document.createElement('a');
+    link.href = require('../newconference1/NEO Conferences Abstract.pdf'); // Adjust path as needed
+    link.download = 'NEO Conferences Abstract.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div>
@@ -162,7 +169,7 @@ const Events = () => {
           </div>
           <div class="apbutton-group">
             <button class="apevent-button" onClick={handleBrochureDownload} >Brochure</button>
-            <button class="apevent-button">Abstract</button>
+            <button class="apevent-button" onClick={handleAbstractDownload} >Abstract</button>
           </div>
         </div>
         <div class="apcountdown-container">

@@ -141,7 +141,7 @@ const HomePage = () => {
             <p>Women's Voices, Women's Power: Toward a Vision of Women Leadership</p>
             <div className="conference-dates">
               {[
-                { image: newconferenceImage, date: 'May 7-8, 2025 | Toronto, Canada', link: '/4th-Global-Women-Power-Summit-on-the-Dynamics-of-Leadership' },
+                // { image: newconferenceImage, date: 'May 7-8, 2025 | Toronto, Canada', link: '/4th-Global-Women-Power-Summit-on-the-Dynamics-of-Leadership' },
                 { image: newconferenceImage, date: 'October 9-10, 2025 | Toronto, Canada', link: '/5th-Global-Women-Power-Summit-on-the-Dynamics-of-Leadership' },
                 { image: newconferenceImage, date: 'March 08-09, 2026 | Paris, France', link: '/6th-Global-Women-Power-Summit-on-the-Dynamics-of-Leadership' },
                 { image: newconferenceImage, date: 'October 15-16, 2026 | NewYork, USA', link: '/7th-Global-Women-Power-Summit-on-the-Dynamics-of-Leadership' }
@@ -163,7 +163,7 @@ const HomePage = () => {
             <p>Unlocking the Power of Global Mental Health: From Awareness to Action</p>
             <div className="conference-dates">
               {[
-                { image: newconferenceone, date:'May 7-8, 2025 | Toronto, Canada', link: '/4th-International-Congress-on-Womens-Health-and-Midwifery-Excellence' },
+                // { image: newconferenceone, date:'May 7-8, 2025 | Toronto, Canada', link: '/4th-International-Congress-on-Womens-Health-and-Midwifery-Excellence' },
                 { image: newconferenceone, date:'October 9-10, 2025 | Toronto, Canada', link: '/4th-International-conference-on-Mental-Health-Well-Being-and-Spiritual-Healing' },
                 { image: newconferenceone, date:'March 08-09, 2026 | Paris, France', link: '/4th-International-Conference-on-Gender-Diversity-and-Transgender-Health' },
                 { image: newconferenceone, date: 'October 15-16, 2026 | NewYork, USA', link: '/6th-World-Congress-on-Mindfulness,-Psychology,-and-Spirituality' }

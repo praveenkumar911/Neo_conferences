@@ -12,20 +12,20 @@ import img8 from "../images/leadership.png";
 import ChatbotIcon from "../chatbot/chatbot";
 
 const events = [
-  {
-    title: "4th International Congress of Women Changemakers and Visionary Leaders",
-    date: "May 07-08, 2025",
-    location: "Toronto, Canada",
-    image: img3,
-    link: "/4th-International-Congress-of-Women-Changemakers-and-Visionary-Leaders",
-  },
-  {
-    title: "4th World Congress on Mindfulness, Psychology, and Spirituality",
-    date: "May 07-08, 2025",
-    location: "Toronto, Canada",
-    image: img4,
-    link: "/4th-International-Congress-on-Women's-Health-and-Midwifery-Excellence",
-  },
+  // {
+  //   title: "4th International Congress of Women Changemakers and Visionary Leaders",
+  //   date: "May 07-08, 2025",
+  //   location: "Toronto, Canada",
+  //   image: img3,
+  //   link: "/4th-International-Congress-of-Women-Changemakers-and-Visionary-Leaders",
+  // },
+  // {
+  //   title: "4th World Congress on Mindfulness, Psychology, and Spirituality",
+  //   date: "May 07-08, 2025",
+  //   location: "Toronto, Canada",
+  //   image: img4,
+  //   link: "/4th-International-Congress-on-Women's-Health-and-Midwifery-Excellence",
+  // },
   {
     title: "4th Global Congress on Women’s Leadership, Empowerment, and Sustainable Development",
     date: "October 09-10, 2025",

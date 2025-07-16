@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ChatbotIcon from "../../chatbot/chatbot";
 import Footer from "../../Footer/footer";
 import Register from "../../Register/register";
+import file from "./Neo Brochure.pdf"
 
 const Events = () => {
   const navigate=useNavigate()
@@ -137,6 +138,27 @@ const Events = () => {
   : null;
 
 
+    const handleBrochureDownload = () => {
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href =file;
+      link.download = '5th-International-Congress-Womens-Leadership-Brochure.pdf';
+      
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+
+
+    const handleAbstractDownload = () => {
+    const link = document.createElement('a');
+    link.href = require('./NEO Conferences Abstract.pdf'); // Adjust path as needed
+    link.download = 'NEO Conferences Abstract.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div>
       <div class="oldventsoverlay">
@@ -147,8 +169,8 @@ const Events = () => {
             <div><i class="fa-solid fa-map-marker-alt exicon"></i> Toronto, Canada</div>
           </div>
           <div class="oldutton-group">
-            <button class="oldvent-button">Brochure</button>
-            <button class="oldvent-button">Abstract</button>
+            <button class="oldvent-button" onClick={handleBrochureDownload} >Brochure</button>
+            <button class="oldvent-button" onClick={handleAbstractDownload} >Abstract</button>
           </div>
         </div>
         <div class="oldountdown-container">
